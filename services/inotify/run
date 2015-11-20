@@ -1,0 +1,7 @@
+#!/bin/sh
+
+while /sbin/setuser abc inotifywait -e modify /config/cron/crontab; do
+    cp /config/cron/crontab /etc/cron.d/
+    echo "New cron schedule detected, copying.."
+    restart cron
+done
