@@ -4,7 +4,7 @@ DNS_LOGIN="{{LOGIN}}"
 DNS_TOKEN="{{TOKEN}}"
 DNS_DOMAIN_ID="{{DOMAIN_ID}}"
 DNS_RECORD_ID="{{RECORD_ID}}"
-IP=`curl -s http://icanhazip.com/`
+IP=`curl -s https://api.ipify.org`
 
 if [ ! -z "$DNS_LOGIN" ]; then
 
